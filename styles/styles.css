@@ -1,0 +1,197 @@
+/* Quicksand fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Site margin */
+
+main {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Shared styles */
+
+.font-1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.font-2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.font-3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.font-4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.font-5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.font-6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.font-7 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.font-7-semi {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.font-8 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Color styles */
+
+.white {
+    color: #FFFFFF;
+}
+
+.black-1 {
+    color: #111111
+}
+
+.sky-blue {
+    color: #01ACFD
+}
+
+.orange {
+    color: #FEA301;
+}
+
+.cyan-1 {
+    color: #05D4DF;
+}
+
+.purple {
+    color: #5D58EF;
+}
+
+.violet-1 {
+    color: #8700FF;
+}
+
+.gray {
+    color: #808080;
+}
+
+.yellow {
+    color: #F0AA00;
+}
+
+.cyan-2 {
+    color: #64C8FF;
+}
+
+.violet-2 {
+    color: #5D58F0;
+}
+
+.black-2 {
+    color: #000000;
+}
+
+.cyan-3 {
+    color: #3CD8E8;
+}
+
+.light-green {
+    color: #95B226;
+}
+
+
+/* Shared styles */
+
+.display-flex {
+    display: flex;
+}
+
+.btn-1 {
+    background-color: #FEA301;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 60px;
+}
+
+/* Navigation bar styles */
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    gap: 32px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.hamburger-menu hr {
+    border: none;
+    background-color: #111111;
+    height: 3px;
+    width: 30px;
+    margin: 0;
+}
+
+/* Responsive styles for mobile devices */
+
+@media screen and (max-width:576px) {
+
+    .site-name,
+    .nav-menu,
+    .btn-1 {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-bar {
+        padding: 10px;
+    }
+
+}
