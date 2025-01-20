@@ -14,16 +14,16 @@
 
 /* Site margin */
 
-main {
+
+.nav-bar {
     max-width: 1160px;
     margin: 0 auto;
 }
 
-.nav-bar {
-    max-width: 1440px;
+.banner{
+    max-width: 1160px;
     margin: 0 auto;
 }
-
 
 /* Shared styles */
 
@@ -65,6 +65,11 @@ main {
 .font-7-semi {
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+.font-7-regular{
+    font-size:1.25rem;
+    font-weight: 400;
 }
 
 .font-8 {
@@ -141,7 +146,18 @@ main {
     background-color: #FEA301;
     border: none;
     border-radius: 12px;
-    padding: 10px 60px;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-2{
+    background-color:#111111;
+    border: none;
+    border-radius: 12px;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
 }
 
 /* Navigation bar styles */
@@ -161,6 +177,11 @@ main {
     gap: 32px;
 }
 
+.nav-menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -176,10 +197,32 @@ main {
     margin: 0;
 }
 
+
+/* Banner styles */
+
+.banner{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-description{
+max-width: 640px;
+}
+
+.banner-title{
+    margin-bottom: 0;
+}
+
+.banner-image{
+    max-width: 468px;
+    max-height: 575px;
+    
+}
+
 /* Responsive styles for mobile devices */
 
 @media screen and (max-width:576px) {
-
+   
     .site-name,
     .nav-menu,
     .btn-1 {
@@ -190,8 +233,24 @@ main {
         display: flex;
     }
 
-    .nav-bar {
+    .nav-bar, .banner {
         padding: 10px;
+    }
+
+    .nav-bar{
+        border-bottom: 0.5px solid #FEA301;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-description{
+        text-align: center;
     }
 
 }
