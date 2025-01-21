@@ -38,11 +38,19 @@
 
 /* Site background */
 
+body {
+    margin: 0;
+}
+
 main {
     background-image: url("../assets/bg.png"), linear-gradient(white, white, white, rgba(254, 163, 1, 0.3));
 }
 
 /* Font styles */
+
+html {
+    font-size: 16px;
+}
 
 .font-1 {
     font-size: 3.5rem;
@@ -196,6 +204,10 @@ main {
 
 /* Navigation bar styles */
 
+header img {
+    margin-top: 32px;
+}
+
 .nav-bar {
     justify-content: space-between;
     align-items: center;
@@ -340,14 +352,16 @@ main {
 
 .short-story-layout {
     background-color: white;
-    width: 290px;
-    height: 307px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .short-story-layout img {
     border-radius: 16px 16px 0px 0px;
-    width: 290px;
+    width: 100%;
+    height: auto;
 }
 
 .short-story-text {
@@ -415,13 +429,22 @@ main {
 
 @media screen and (max-width:576px) {
 
+    html {
+        font-size: 12px;
+    }
+
     body {
         margin: 0;
     }
 
-    main{
+    header img {
+        margin-top: 20px;
+    }
+
+    main {
         padding: 16px;
     }
+
 
     .site-name,
     .nav-menu,
@@ -435,8 +458,7 @@ main {
     }
 
     .nav-bar,
-    .banner
-     {
+    .banner {
         padding: 16px;
     }
 
@@ -448,12 +470,17 @@ main {
         flex-direction: column-reverse;
     }
 
-    .banner-image img {
+    .banner-image img,
+    .short-story {
         width: 100%;
     }
 
     .banner-description {
         text-align: center;
+    }
+
+    .card-common p{
+     padding: 0 40px 20px 40px;
     }
 
     .curriculum-cards,
@@ -467,14 +494,20 @@ main {
 
     .short-story {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .short-story-text {
+        padding: 10px;
+
     }
 
     .story {
         justify-content: center;
     }
 
-    .short-story-layout{
-        width: auto;
+    .short-story-layout {
+        width: 100%;
     }
 
     .footer {
