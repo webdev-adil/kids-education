@@ -30,10 +30,15 @@
     margin: 0 auto;
 }
 
+.story-section{
+    max-width: 1160px;
+    margin: 0 auto; 
+}
+
 /* Site background */
 
 main{
-    background-image: url("../assets/bg.png");
+    background-image: url("../assets/bg.png"), linear-gradient(white,white, white, rgba(254, 163, 1, 0.3));
 }
 
 /* Font styles */
@@ -181,6 +186,7 @@ main{
     cursor: pointer;
 }
 
+
 .section-title{
     text-align: center;
     margin-top: 60px;
@@ -276,6 +282,22 @@ max-width: 640px;
 
 .card-common a{
     text-decoration: none;
+}
+
+
+/* Story section styles */
+
+
+.short-story{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.text-box{
+    background-color: white;
+    border: none;
+    border-radius: 0px 0px 16px 16px;
 }
 
 /* Responsive styles for mobile devices */
