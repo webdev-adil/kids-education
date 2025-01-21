@@ -25,7 +25,18 @@
     margin: 0 auto;
 }
 
-/* Shared styles */
+.curriculum{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Site background */
+
+main{
+    background-image: url("../assets/bg.png");
+}
+
+/* Font styles */
 
 .font-1 {
     font-size: 3.5rem;
@@ -67,6 +78,11 @@
     font-weight: 600;
 }
 
+.font-7-medium{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 .font-7-regular{
     font-size:1.25rem;
     font-weight: 400;
@@ -75,6 +91,11 @@
 .font-8 {
     font-size: 1rem;
     font-weight: bold;
+}
+
+.font-8-medium{
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* Color styles */
@@ -160,6 +181,12 @@
     cursor: pointer;
 }
 
+.section-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
 /* Navigation bar styles */
 
 .nav-bar {
@@ -219,6 +246,38 @@ max-width: 640px;
     
 }
 
+/* Standard curriculum section styles */
+
+.curriculum-cards{
+    gap: 28px;
+}
+
+.card-common{
+    border-radius: 18px;
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 50px;
+}
+
+.card-1{
+    border: 1px solid #DEF5FF;
+    background-image: linear-gradient(#DEF5FF, white, white);
+}
+
+.card-2{
+    border: 1px solid #FFF4DC;
+    background-image: linear-gradient(#F0AA00, white, white);
+}
+
+.card-3{
+    border: 1px solid #F2E8FF;
+    background-image: linear-gradient(#F2E8FF, white, white);
+}
+
+.card-common a{
+    text-decoration: none;
+}
+
 /* Responsive styles for mobile devices */
 
 @media screen and (max-width:576px) {
@@ -251,6 +310,10 @@ max-width: 640px;
 
     .banner-description{
         text-align: center;
+    }
+
+    .curriculum-cards{
+        flex-direction: column;
     }
 
 }
