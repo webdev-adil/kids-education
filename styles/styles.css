@@ -27,7 +27,7 @@
 .curriculum {
     max-width: 1160px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .story-section {
@@ -266,6 +266,29 @@ header img {
 
 }
 
+
+/* Marquee styles */
+
+.marquee-container{
+    padding-top: 20px;
+}
+
+.marquee {
+    text-align: center;
+}
+
+.marquee-text-1{
+   margin: 0;
+   font-size: 2.5rem;
+   font-weight: 600;
+}
+
+.marquee-text-2{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* Standard curriculum section styles */
 
 .curriculum-cards {
@@ -275,8 +298,11 @@ header img {
 .card-common {
     border-radius: 18px;
     text-align: center;
-    padding-top: 52px;
-    padding-bottom: 50px;
+    padding: 52px 10px 50px 10px;
+    max-width: 367px;
+}
+.card-common img{
+    max-height: 127px;
 }
 
 .card-1 {
@@ -300,20 +326,24 @@ header img {
 
 /* Button styles */
 
-.button-container{
+.button-container {
     justify-content: center;
     gap: 15px;
     margin-top: 80px;
 }
 
-.circle-button{
-    background-color: orange;
+.circle-button {
+    background-color: rgb(243, 213, 159);
     border-radius: 50%;
     border: none;
     height: 80px;
     width: 80px;
+    cursor: pointer;
 }
 
+.circle-button:hover{
+    background-color: orange;
+}
 
 /* Story section styles */
 
@@ -399,6 +429,7 @@ header img {
 .featured-story {
     flex-direction: column;
     justify-content: start;
+    cursor: pointer;
 }
 
 .short-story-layout {
@@ -407,6 +438,7 @@ header img {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .short-story-layout img {
@@ -488,6 +520,11 @@ header img {
     margin-top: 0px;
 }
 
+.social-media-icon{
+    gap: 5px;
+    cursor: pointer;
+}
+
 /* Responsive styles for mobile devices */
 
 @media screen and (max-width:576px) {
@@ -543,6 +580,24 @@ header img {
         font-size: 3.1rem;
     }
 
+    .marquee-container{
+        position: absolute;
+        margin-top: -850px;
+       
+    }
+    
+    .marquee-text-1{
+        margin-top:0;
+        font-size: 2rem;
+        font-weight: 600;
+     }
+     
+     .marquee-text-2{
+         margin: 0;
+         font-size: 1.2rem;
+         font-weight: 500;
+     }
+
     .section-title {
         text-align: center;
         margin-top: 40px;
@@ -553,7 +608,7 @@ header img {
         text-align: center;
     }
 
-    .curriculum{
+    .curriculum {
         padding: 0;
     }
 
