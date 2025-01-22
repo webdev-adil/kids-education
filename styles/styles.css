@@ -14,6 +14,10 @@
 
 /* Site margin */
 
+body {
+    margin: 0;
+}
+
 .nav-bar {
     max-width: 1160px;
     margin: 0 auto;
@@ -39,13 +43,10 @@
 
 /* Site background */
 
-body {
-    margin: 0;
-}
-
 main {
     background-image: url("../assets/bg.png"), linear-gradient(white, white, white, rgba(254, 163, 1, 0.3));
 }
+
 
 /* Font styles */
 
@@ -113,7 +114,7 @@ html {
     font-weight: 500;
 }
 
-/* Color styles */
+/* Font color styles */
 
 .white {
     color: #FFFFFF;
@@ -324,7 +325,7 @@ header img {
     text-decoration: none;
 }
 
-/* Button styles */
+/* Circle button styles */
 
 .button-container {
     justify-content: center;
@@ -371,8 +372,6 @@ header img {
     text-align: center;
     border-radius: 48px;
     margin: -145px 0px 0px 28px;
-
-
 }
 
 .story-time-3 {
@@ -383,8 +382,6 @@ header img {
     text-align: center;
     border-radius: 48px;
     margin: -145px 0px 0px 28px;
-
-
 }
 
 .short-story {
@@ -532,11 +529,6 @@ header img {
         font-size: 12px;
     }
 
-
-    body {
-        margin: 0;
-    }
-
     header img {
         margin-top: 20px;
     }
@@ -544,7 +536,6 @@ header img {
     main {
         padding: 16px;
     }
-
 
     .site-name,
     .nav-menu,
@@ -582,8 +573,7 @@ header img {
 
     .marquee-container{
         position: absolute;
-        margin-top: -850px;
-       
+        margin-top: -850px; 
     }
     
     .marquee-text-1{
@@ -592,7 +582,7 @@ header img {
         font-weight: 600;
      }
      
-     .marquee-text-2{
+    .marquee-text-2{
          margin: 0;
          font-size: 1.2rem;
          font-weight: 500;
@@ -645,6 +635,7 @@ header img {
 
     .story {
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .short-story-layout {
