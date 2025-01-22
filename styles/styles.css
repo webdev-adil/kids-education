@@ -27,6 +27,7 @@
 .curriculum {
     max-width: 1160px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
 .story-section {
@@ -297,6 +298,22 @@ header img {
     text-decoration: none;
 }
 
+/* Button styles */
+
+.button-container{
+    justify-content: center;
+    gap: 15px;
+    margin-top: 80px;
+}
+
+.circle-button{
+    background-color: orange;
+    border-radius: 50%;
+    border: none;
+    height: 80px;
+    width: 80px;
+}
+
 
 /* Story section styles */
 
@@ -305,7 +322,7 @@ header img {
     margin-bottom: 80px;
 }
 
-.story-time-1{
+.story-time-1 {
     background-color: #3CD8E8;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -316,7 +333,7 @@ header img {
     z-index: 10;
 }
 
-.story-time-2{
+.story-time-2 {
     background-color: #95B226;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -324,8 +341,20 @@ header img {
     text-align: center;
     border-radius: 48px;
     margin: -145px 0px 0px 28px;
-    z-index: 10;
-   
+
+
+}
+
+.story-time-3 {
+    background-color: #5D58F0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 175px;
+    text-align: center;
+    border-radius: 48px;
+    margin: -145px 0px 0px 28px;
+
+
 }
 
 .short-story {
@@ -432,7 +461,7 @@ header img {
     padding: 0;
 }
 
-.footer-logo{
+.footer-logo {
     gap: 10px;
     align-items: center;
 }
@@ -462,10 +491,10 @@ header img {
 /* Responsive styles for mobile devices */
 
 @media screen and (max-width:576px) {
-
     html {
         font-size: 12px;
     }
+
 
     body {
         margin: 0;
@@ -483,7 +512,8 @@ header img {
     .site-name,
     .nav-menu,
     .btn-1,
-    .featured-story {
+    .featured-story,
+    .button-container {
         display: none;
     }
 
@@ -509,7 +539,7 @@ header img {
         width: 100%;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 3.1rem;
     }
 
@@ -523,6 +553,10 @@ header img {
         text-align: center;
     }
 
+    .curriculum{
+        padding: 0;
+    }
+
     .card-common p {
         padding: 0 40px 20px 40px;
     }
@@ -533,6 +567,16 @@ header img {
 
     .more-story {
         display: grid;
+    }
+
+    .story-time-2,
+    .story-time-3 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        max-width: 125px;
+        text-align: center;
+        border-radius: 48px;
+        margin: -115px 0px 0px 10px;
     }
 
     .short-story {
@@ -561,9 +605,8 @@ header img {
         width: 100%;
     }
 
-    .footer-logo img{
+    .footer-logo img {
         height: 70px;
         width: auto;
     }
-
 }
